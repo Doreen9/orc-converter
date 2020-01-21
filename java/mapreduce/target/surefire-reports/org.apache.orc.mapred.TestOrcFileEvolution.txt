@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.orc.mapred.TestOrcFileEvolution
+-------------------------------------------------------------------------------
+Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.25 s - in org.apache.orc.mapred.TestOrcFileEvolution

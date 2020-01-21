@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/orc.iml" filepath="$PROJECT_DIR$/orc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/orc-core.iml" filepath="$PROJECT_DIR$/core/orc-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/examples/orc-examples.iml" filepath="$PROJECT_DIR$/examples/orc-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mapreduce/orc-mapreduce.iml" filepath="$PROJECT_DIR$/mapreduce/orc-mapreduce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shims/orc-shims.iml" filepath="$PROJECT_DIR$/shims/orc-shims.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tools/orc-tools.iml" filepath="$PROJECT_DIR$/tools/orc-tools.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.orc.TestOrcTimezone2" time="7.233" tests="500" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-booter/2.21.0/surefire-booter-2.21.0.jar:/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-api/2.21.0/surefire-api-2.21.0.jar:/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.21.0/surefire-logger-api-2.21.0.jar:/home/ubuntu/Downloads/orc-master/java/core/target/test-classes:/home/ubuntu/Downloads/orc-master/java/core/target/classes:/home/ubuntu/Downloads/orc-master/java/shims/target/orc-shims-1.7.0-SNAPSHOT.jar:/home/ubuntu/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/home/ubuntu/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/ubuntu/.m2/repository/io/airlift/aircompressor/0.15/aircompressor-0.15.jar:/home/ubuntu/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-annotations/2.2.0/hadoop-annotations-2.2.0.jar:/home/ubuntu/.m2/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar:/home/ubuntu/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/home/ubuntu/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/home/ubuntu/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/home/ubuntu/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1.jar:/home/ubuntu/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/home/ubuntu/.m2/repository/asm/asm/3.1/asm-3.1.jar:/home/ubuntu/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/ubuntu/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/ubuntu/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/home/ubuntu/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.8/jackson-core-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.8/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0.jar:/home/ubuntu/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/home/ubuntu/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.2.0/hadoop-hdfs-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hive/hive-storage-api/2.7.1/hive-storage-api-2.7.1.jar:/home/ubuntu/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/home/ubuntu/.m2/repository/org/threeten/threeten-extra/1.5.0/threeten-extra-1.5.0.jar:/home/ubuntu/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/home/ubuntu/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/ubuntu/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/1.0/objenesis-1.0.jar:/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="test.tmp.dir" value="/home/ubuntu/Downloads/orc-master/java/core/target/testing-tmp"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /home/ubuntu/Downloads/orc-master/java/core/target/surefire 2020-01-21T11-51-19_535-jvmRun1 surefire2234355555673744350tmp surefire_495531614804907633369tmp"/>
+    <property name="surefire.test.class.path" value="/home/ubuntu/Downloads/orc-master/java/core/target/test-classes:/home/ubuntu/Downloads/orc-master/java/core/target/classes:/home/ubuntu/Downloads/orc-master/java/shims/target/orc-shims-1.7.0-SNAPSHOT.jar:/home/ubuntu/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/home/ubuntu/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/ubuntu/.m2/repository/io/airlift/aircompressor/0.15/aircompressor-0.15.jar:/home/ubuntu/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-annotations/2.2.0/hadoop-annotations-2.2.0.jar:/home/ubuntu/.m2/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar:/home/ubuntu/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/home/ubuntu/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/home/ubuntu/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/home/ubuntu/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1.jar:/home/ubuntu/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/home/ubuntu/.m2/repository/asm/asm/3.1/asm-3.1.jar:/home/ubuntu/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/ubuntu/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/ubuntu/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/home/ubuntu/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.8/jackson-core-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.8/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0.jar:/home/ubuntu/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/home/ubuntu/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.2.0/hadoop-hdfs-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hive/hive-storage-api/2.7.1/hive-storage-api-2.7.1.jar:/home/ubuntu/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/home/ubuntu/.m2/repository/org/threeten/threeten-extra/1.5.0/threeten-extra-1.5.0.jar:/home/ubuntu/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/home/ubuntu/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/ubuntu/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/1.0/objenesis-1.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ubuntu"/>
+    <property name="user.language" value="en"/>
+    <property name="example.dir" value="/home/ubuntu/Downloads/orc-master/java/core/../../examples"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="basedir" value="/home/ubuntu/Downloads/orc-master/java/core"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_232-8u232-b09-0ubuntu1~18.04.1-b09"/>
+    <property name="user.name" value="ubuntu"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.15.0-1056-aws"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/ubuntu/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_232"/>
+    <property name="user.dir" value="/home/ubuntu/Downloads/orc-master/java/core"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vm.version" value="25.232-b09"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testTimestampWriter[0]" classname="org.apache.orc.TestOrcTimezone2" time="0.737"/>
+  <testcase name="testTimestampWriter[1]" classname="org.apache.orc.TestOrcTimezone2" time="0.032"/>
+  <testcase name="testTimestampWriter[2]" classname="org.apache.orc.TestOrcTimezone2" time="0.042"/>
+  <testcase name="testTimestampWriter[3]" classname="org.apache.orc.TestOrcTimezone2" time="0.025"/>
+  <testcase name="testTimestampWriter[4]" classname="org.apache.orc.TestOrcTimezone2" time="0.03"/>
+  <testcase name="testTimestampWriter[5]" classname="org.apache.orc.TestOrcTimezone2" time="0.041"/>
+  <testcase name="testTimestampWriter[6]" classname="org.apache.orc.TestOrcTimezone2" time="0.026"/>
+  <testcase name="testTimestampWriter[7]" classname="org.apache.orc.TestOrcTimezone2" time="0.023"/>
+  <testcase name="testTimestampWriter[8]" classname="org.apache.orc.TestOrcTimezone2" time="0.024"/>
+  <testcase name="testTimestampWriter[9]" classname="org.apache.orc.TestOrcTimezone2" time="0.02"/>
+  <testcase name="testTimestampWriter[10]" classname="org.apache.orc.TestOrcTimezone2" time="0.019"/>
+  <testcase name="testTimestampWriter[11]" classname="org.apache.orc.TestOrcTimezone2" time="0.019"/>
+  <testcase name="testTimestampWriter[12]" classname="org.apache.orc.TestOrcTimezone2" time="0.025"/>
+  <testcase name="testTimestampWriter[13]" classname="org.apache.orc.TestOrcTimezone2" time="0.023"/>
+  <testcase name="testTimestampWriter[14]" classname="org.apache.orc.TestOrcTimezone2" time="0.021"/>
+  <testcase name="testTimestampWriter[15]" classname="org.apache.orc.TestOrcTimezone2" time="0.021"/>
+  <testcase name="testTimestampWriter[16]" classname="org.apache.orc.TestOrcTimezone2" time="0.019"/>
+  <testcase name="testTimestampWriter[17]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[18]" classname="org.apache.orc.TestOrcTimezone2" time="0.018"/>
+  <testcase name="testTimestampWriter[19]" classname="org.apache.orc.TestOrcTimezone2" time="0.021"/>
+  <testcase name="testTimestampWriter[20]" classname="org.apache.orc.TestOrcTimezone2" time="0.025"/>
+  <testcase name="testTimestampWriter[21]" classname="org.apache.orc.TestOrcTimezone2" time="0.022"/>
+  <testcase name="testTimestampWriter[22]" classname="org.apache.orc.TestOrcTimezone2" time="0.025"/>
+  <testcase name="testTimestampWriter[23]" classname="org.apache.orc.TestOrcTimezone2" time="0.029"/>
+  <testcase name="testTimestampWriter[24]" classname="org.apache.orc.TestOrcTimezone2" time="0.03"/>
+  <testcase name="testTimestampWriter[25]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[26]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[27]" classname="org.apache.orc.TestOrcTimezone2" time="0.018"/>
+  <testcase name="testTimestampWriter[28]" classname="org.apache.orc.TestOrcTimezone2" time="0.025"/>
+  <testcase name="testTimestampWriter[29]" classname="org.apache.orc.TestOrcTimezone2" time="0.026"/>
+  <testcase name="testTimestampWriter[30]" classname="org.apache.orc.TestOrcTimezone2" time="0.02"/>
+  <testcase name="testTimestampWriter[31]" classname="org.apache.orc.TestOrcTimezone2" time="0.038"/>
+  <testcase name="testTimestampWriter[32]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[33]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[34]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[35]" classname="org.apache.orc.TestOrcTimezone2" time="0.031"/>
+  <testcase name="testTimestampWriter[36]" classname="org.apache.orc.TestOrcTimezone2" time="0.018"/>
+  <testcase name="testTimestampWriter[37]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[38]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[39]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[40]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[41]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[42]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[43]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[44]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[45]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[46]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[47]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[48]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[49]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[50]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[51]" classname="org.apache.orc.TestOrcTimezone2" time="0.02"/>
+  <testcase name="testTimestampWriter[52]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[53]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[54]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[55]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[56]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[57]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[58]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[59]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[60]" classname="org.apache.orc.TestOrcTimezone2" time="0.023"/>
+  <testcase name="testTimestampWriter[61]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[62]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[63]" classname="org.apache.orc.TestOrcTimezone2" time="0.03"/>
+  <testcase name="testTimestampWriter[64]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[65]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[66]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[67]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[68]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[69]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[70]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[71]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[72]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[73]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[74]" classname="org.apache.orc.TestOrcTimezone2" time="0.02"/>
+  <testcase name="testTimestampWriter[75]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[76]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[77]" classname="org.apache.orc.TestOrcTimezone2" time="0.02"/>
+  <testcase name="testTimestampWriter[78]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[79]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[80]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[81]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[82]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[83]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[84]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[85]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[86]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[87]" classname="org.apache.orc.TestOrcTimezone2" time="0.018"/>
+  <testcase name="testTimestampWriter[88]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[89]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[90]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[91]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[92]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[93]" classname="org.apache.orc.TestOrcTimezone2" time="0.024"/>
+  <testcase name="testTimestampWriter[94]" classname="org.apache.orc.TestOrcTimezone2" time="0.017"/>
+  <testcase name="testTimestampWriter[95]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[96]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[97]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[98]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[99]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[100]" classname="org.apache.orc.TestOrcTimezone2" time="0.017"/>
+  <testcase name="testTimestampWriter[101]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[102]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[103]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[104]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[105]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[106]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[107]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[108]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[109]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[110]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[111]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[112]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[113]" classname="org.apache.orc.TestOrcTimezone2" time="0.036"/>
+  <testcase name="testTimestampWriter[114]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[115]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[116]" classname="org.apache.orc.TestOrcTimezone2" time="0.025"/>
+  <testcase name="testTimestampWriter[117]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[118]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[119]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[120]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[121]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[122]" classname="org.apache.orc.TestOrcTimezone2" time="0.019"/>
+  <testcase name="testTimestampWriter[123]" classname="org.apache.orc.TestOrcTimezone2" time="0.017"/>
+  <testcase name="testTimestampWriter[124]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[125]" classname="org.apache.orc.TestOrcTimezone2" time="0.02"/>
+  <testcase name="testTimestampWriter[126]" classname="org.apache.orc.TestOrcTimezone2" time="0.017"/>
+  <testcase name="testTimestampWriter[127]" classname="org.apache.orc.TestOrcTimezone2" time="0.023"/>
+  <testcase name="testTimestampWriter[128]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[129]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[130]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[131]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[132]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[133]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[134]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[135]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[136]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[137]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[138]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[139]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[140]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[141]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[142]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[143]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[144]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[145]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[146]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[147]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[148]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[149]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[150]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[151]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[152]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[153]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[154]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[155]" classname="org.apache.orc.TestOrcTimezone2" time="0.017"/>
+  <testcase name="testTimestampWriter[156]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[157]" classname="org.apache.orc.TestOrcTimezone2" time="0.021"/>
+  <testcase name="testTimestampWriter[158]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[159]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[160]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[161]" classname="org.apache.orc.TestOrcTimezone2" time="0.023"/>
+  <testcase name="testTimestampWriter[162]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[163]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[164]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[165]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[166]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[167]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[168]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[169]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[170]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[171]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[172]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[173]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[174]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[175]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[176]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[177]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[178]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[179]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[180]" classname="org.apache.orc.TestOrcTimezone2" time="0.022"/>
+  <testcase name="testTimestampWriter[181]" classname="org.apache.orc.TestOrcTimezone2" time="0.017"/>
+  <testcase name="testTimestampWriter[182]" classname="org.apache.orc.TestOrcTimezone2" time="0.018"/>
+  <testcase name="testTimestampWriter[183]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[184]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[185]" classname="org.apache.orc.TestOrcTimezone2" time="0.017"/>
+  <testcase name="testTimestampWriter[186]" classname="org.apache.orc.TestOrcTimezone2" time="0.019"/>
+  <testcase name="testTimestampWriter[187]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[188]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[189]" classname="org.apache.orc.TestOrcTimezone2" time="0.019"/>
+  <testcase name="testTimestampWriter[190]" classname="org.apache.orc.TestOrcTimezone2" time="0.034"/>
+  <testcase name="testTimestampWriter[191]" classname="org.apache.orc.TestOrcTimezone2" time="0.023"/>
+  <testcase name="testTimestampWriter[192]" classname="org.apache.orc.TestOrcTimezone2" time="0.021"/>
+  <testcase name="testTimestampWriter[193]" classname="org.apache.orc.TestOrcTimezone2" time="0.018"/>
+  <testcase name="testTimestampWriter[194]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[195]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[196]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[197]" classname="org.apache.orc.TestOrcTimezone2" time="0.026"/>
+  <testcase name="testTimestampWriter[198]" classname="org.apache.orc.TestOrcTimezone2" time="0.02"/>
+  <testcase name="testTimestampWriter[199]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[200]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[201]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[202]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[203]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[204]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[205]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[206]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[207]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[208]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[209]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[210]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[211]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[212]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[213]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[214]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[215]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[216]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[217]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[218]" classname="org.apache.orc.TestOrcTimezone2" time="0.018"/>
+  <testcase name="testTimestampWriter[219]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[220]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[221]" classname="org.apache.orc.TestOrcTimezone2" time="0.017"/>
+  <testcase name="testTimestampWriter[222]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[223]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[224]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[225]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[226]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[227]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[228]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[229]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[230]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[231]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[232]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[233]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[234]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[235]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[236]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[237]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[238]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[239]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[240]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[241]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[242]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[243]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[244]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[245]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[246]" classname="org.apache.orc.TestOrcTimezone2" time="0.037"/>
+  <testcase name="testTimestampWriter[247]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[248]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[249]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[250]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[251]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[252]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[253]" classname="org.apache.orc.TestOrcTimezone2" time="0.019"/>
+  <testcase name="testTimestampWriter[254]" classname="org.apache.orc.TestOrcTimezone2" time="0.019"/>
+  <testcase name="testTimestampWriter[255]" classname="org.apache.orc.TestOrcTimezone2" time="0.019"/>
+  <testcase name="testTimestampWriter[256]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[257]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[258]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[259]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[260]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[261]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[262]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[263]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[264]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[265]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[266]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[267]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[268]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[269]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[270]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[271]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[272]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[273]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[274]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[275]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[276]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[277]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[278]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[279]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[280]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[281]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[282]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[283]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[284]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[285]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[286]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[287]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[288]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[289]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[290]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[291]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[292]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[293]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[294]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[295]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[296]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[297]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[298]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[299]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[300]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[301]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[302]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[303]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[304]" classname="org.apache.orc.TestOrcTimezone2" time="0.003"/>
+  <testcase name="testTimestampWriter[305]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[306]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[307]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[308]" classname="org.apache.orc.TestOrcTimezone2" time="0.016"/>
+  <testcase name="testTimestampWriter[309]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[310]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[311]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[312]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[313]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[314]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[315]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[316]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[317]" classname="org.apache.orc.TestOrcTimezone2" time="0.025"/>
+  <testcase name="testTimestampWriter[318]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[319]" classname="org.apache.orc.TestOrcTimezone2" time="0.018"/>
+  <testcase name="testTimestampWriter[320]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[321]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[322]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[323]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[324]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[325]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[326]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[327]" classname="org.apache.orc.TestOrcTimezone2" time="0.004"/>
+  <testcase name="testTimestampWriter[328]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[329]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[330]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[331]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[332]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[333]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[334]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[335]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[336]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[337]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[338]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[339]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[340]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[341]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[342]" classname="org.apache.orc.TestOrcTimezone2" time="0.017"/>
+  <testcase name="testTimestampWriter[343]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[344]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[345]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[346]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[347]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[348]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[349]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[350]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[351]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[352]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[353]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[354]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[355]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[356]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[357]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[358]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[359]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[360]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[361]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[362]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[363]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[364]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[365]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[366]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[367]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[368]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[369]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[370]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[371]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[372]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[373]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[374]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[375]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[376]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[377]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[378]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[379]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[380]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[381]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[382]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[383]" classname="org.apache.orc.TestOrcTimezone2" time="0.015"/>
+  <testcase name="testTimestampWriter[384]" classname="org.apache.orc.TestOrcTimezone2" time="0.019"/>
+  <testcase name="testTimestampWriter[385]" classname="org.apache.orc.TestOrcTimezone2" time="0.021"/>
+  <testcase name="testTimestampWriter[386]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[387]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[388]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[389]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[390]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[391]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[392]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[393]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[394]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[395]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[396]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[397]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[398]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[399]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[400]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[401]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[402]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[403]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[404]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[405]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[406]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[407]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[408]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[409]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[410]" classname="org.apache.orc.TestOrcTimezone2" time="0.02"/>
+  <testcase name="testTimestampWriter[411]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[412]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[413]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[414]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[415]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[416]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[417]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[418]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[419]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[420]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[421]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[422]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[423]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[424]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[425]" classname="org.apache.orc.TestOrcTimezone2" time="0.014"/>
+  <testcase name="testTimestampWriter[426]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[427]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[428]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[429]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[430]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[431]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[432]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[433]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[434]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[435]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[436]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[437]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[438]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[439]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[440]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[441]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[442]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[443]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[444]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[445]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[446]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[447]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[448]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[449]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[450]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[451]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[452]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[453]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[454]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[455]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[456]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[457]" classname="org.apache.orc.TestOrcTimezone2" time="0.013"/>
+  <testcase name="testTimestampWriter[458]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[459]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[460]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[461]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[462]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[463]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[464]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[465]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[466]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[467]" classname="org.apache.orc.TestOrcTimezone2" time="0.025"/>
+  <testcase name="testTimestampWriter[468]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[469]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[470]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[471]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[472]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[473]" classname="org.apache.orc.TestOrcTimezone2" time="0.011"/>
+  <testcase name="testTimestampWriter[474]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[475]" classname="org.apache.orc.TestOrcTimezone2" time="0.004"/>
+  <testcase name="testTimestampWriter[476]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[477]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[478]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[479]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[480]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[481]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[482]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[483]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[484]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[485]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[486]" classname="org.apache.orc.TestOrcTimezone2" time="0.004"/>
+  <testcase name="testTimestampWriter[487]" classname="org.apache.orc.TestOrcTimezone2" time="0.012"/>
+  <testcase name="testTimestampWriter[488]" classname="org.apache.orc.TestOrcTimezone2" time="0.003"/>
+  <testcase name="testTimestampWriter[489]" classname="org.apache.orc.TestOrcTimezone2" time="0.006"/>
+  <testcase name="testTimestampWriter[490]" classname="org.apache.orc.TestOrcTimezone2" time="0.007"/>
+  <testcase name="testTimestampWriter[491]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[492]" classname="org.apache.orc.TestOrcTimezone2" time="0.005"/>
+  <testcase name="testTimestampWriter[493]" classname="org.apache.orc.TestOrcTimezone2" time="0.01"/>
+  <testcase name="testTimestampWriter[494]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[495]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[496]" classname="org.apache.orc.TestOrcTimezone2" time="0.009"/>
+  <testcase name="testTimestampWriter[497]" classname="org.apache.orc.TestOrcTimezone2" time="0.008"/>
+  <testcase name="testTimestampWriter[498]" classname="org.apache.orc.TestOrcTimezone2" time="0.019"/>
+  <testcase name="testTimestampWriter[499]" classname="org.apache.orc.TestOrcTimezone2" time="0.028"/>
+</testsuite>

@@ -1,0 +1,31 @@
+{
+
+
+"users" : [
+
+	{
+	"userId": 1,
+	"firstName": "Doreen",
+	"lastName" : "Dodoo",
+	"phoneNumber": "12345",
+	"emailAddress":"doreendodoo91@gmail.com"
+	},
+	{
+	"userId": 2,
+	"firstName": "Mary",
+	"lastName" : "Dodoo",
+	"phoneNumber": "12345",
+	"emailAddress":"mary@gmail.com"
+	},
+	{
+	"userId": 3,
+	"firstName": "Dennis",
+	"lastName" : "Gyan",
+	"phoneNumber": "12345",
+	"emailAddress":"dennis@gmail.com"
+	}
+
+
+]
+
+}

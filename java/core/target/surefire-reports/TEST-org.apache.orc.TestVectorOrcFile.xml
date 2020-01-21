@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.orc.TestVectorOrcFile" time="20.609" tests="129" errors="0" skipped="18" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-booter/2.21.0/surefire-booter-2.21.0.jar:/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-api/2.21.0/surefire-api-2.21.0.jar:/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.21.0/surefire-logger-api-2.21.0.jar:/home/ubuntu/Downloads/orc-master/java/core/target/test-classes:/home/ubuntu/Downloads/orc-master/java/core/target/classes:/home/ubuntu/Downloads/orc-master/java/shims/target/orc-shims-1.7.0-SNAPSHOT.jar:/home/ubuntu/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/home/ubuntu/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/ubuntu/.m2/repository/io/airlift/aircompressor/0.15/aircompressor-0.15.jar:/home/ubuntu/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-annotations/2.2.0/hadoop-annotations-2.2.0.jar:/home/ubuntu/.m2/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar:/home/ubuntu/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/home/ubuntu/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/home/ubuntu/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/home/ubuntu/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1.jar:/home/ubuntu/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/home/ubuntu/.m2/repository/asm/asm/3.1/asm-3.1.jar:/home/ubuntu/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/ubuntu/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/ubuntu/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/home/ubuntu/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.8/jackson-core-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.8/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0.jar:/home/ubuntu/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/home/ubuntu/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.2.0/hadoop-hdfs-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hive/hive-storage-api/2.7.1/hive-storage-api-2.7.1.jar:/home/ubuntu/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/home/ubuntu/.m2/repository/org/threeten/threeten-extra/1.5.0/threeten-extra-1.5.0.jar:/home/ubuntu/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/home/ubuntu/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/ubuntu/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/1.0/objenesis-1.0.jar:/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="test.tmp.dir" value="/home/ubuntu/Downloads/orc-master/java/core/target/testing-tmp"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /home/ubuntu/Downloads/orc-master/java/core/target/surefire 2020-01-21T11-51-19_535-jvmRun1 surefire2678709153302364411tmp surefire_462617767753009031985tmp"/>
+    <property name="surefire.test.class.path" value="/home/ubuntu/Downloads/orc-master/java/core/target/test-classes:/home/ubuntu/Downloads/orc-master/java/core/target/classes:/home/ubuntu/Downloads/orc-master/java/shims/target/orc-shims-1.7.0-SNAPSHOT.jar:/home/ubuntu/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/home/ubuntu/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/ubuntu/.m2/repository/io/airlift/aircompressor/0.15/aircompressor-0.15.jar:/home/ubuntu/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-annotations/2.2.0/hadoop-annotations-2.2.0.jar:/home/ubuntu/.m2/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar:/home/ubuntu/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/home/ubuntu/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/home/ubuntu/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/home/ubuntu/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1.jar:/home/ubuntu/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/home/ubuntu/.m2/repository/asm/asm/3.1/asm-3.1.jar:/home/ubuntu/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/ubuntu/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/ubuntu/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/home/ubuntu/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.8/jackson-core-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.8/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0.jar:/home/ubuntu/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/home/ubuntu/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.2.0/hadoop-hdfs-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hive/hive-storage-api/2.7.1/hive-storage-api-2.7.1.jar:/home/ubuntu/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/home/ubuntu/.m2/repository/org/threeten/threeten-extra/1.5.0/threeten-extra-1.5.0.jar:/home/ubuntu/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/home/ubuntu/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/ubuntu/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/1.0/objenesis-1.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ubuntu"/>
+    <property name="user.language" value="en"/>
+    <property name="example.dir" value="/home/ubuntu/Downloads/orc-master/java/core/../../examples"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="basedir" value="/home/ubuntu/Downloads/orc-master/java/core"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_232-8u232-b09-0ubuntu1~18.04.1-b09"/>
+    <property name="user.name" value="ubuntu"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.15.0-1056-aws"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/ubuntu/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_232"/>
+    <property name="user.dir" value="/home/ubuntu/Downloads/orc-master/java/core"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vm.version" value="25.232-b09"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testColumnProjection[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.887"/>
+  <testcase name="testBadPrestoVersion[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.033"/>
+  <testcase name="testZeroByteOrcFile[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.019"/>
+  <testcase name="testDate1900[0]" classname="org.apache.orc.TestVectorOrcFile" time="1.633"/>
+  <testcase name="testDate2038[0]" classname="org.apache.orc.TestVectorOrcFile" time="3.022"/>
+  <testcase name="testColumnEncryption[0]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testLz4[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.064"/>
+  <testcase name="testLzo[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.067"/>
+  <testcase name="testMemoryManagement[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.049"/>
+  <testcase name="testLists[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.029"/>
+  <testcase name="testMerge[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.116"/>
+  <testcase name="testWriterVersion[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.017"/>
+  <testcase name="testPredicatePushdown[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.061"/>
+  <testcase name="testMaps[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.04"/>
+  <testcase name="testSeek[0]" classname="org.apache.orc.TestVectorOrcFile" time="1.358"/>
+  <testcase name="testZstd[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.197"/>
+  <testcase name="testEncryptMerge[0]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testNonDictionaryRepeatingString[0]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testWithoutIndex[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.122"/>
+  <testcase name="testEmptyFile[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.023"/>
+  <testcase name="testStripeLevelStats[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.023"/>
+  <testcase name="testHiveDecimalStatsAllNulls[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.03"/>
+  <testcase name="testCodecPool[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.245"/>
+  <testcase name="metaData[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.043"/>
+  <testcase name="testRepeating[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.179"/>
+  <testcase name="testEmptyDoubleStream[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.023"/>
+  <testcase name="test1[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.033"/>
+  <testcase name="testStringAndBinaryStatistics[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.021"/>
+  <testcase name="testExpansion[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.03"/>
+  <testcase name="testTimestamp[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.013"/>
+  <testcase name="testReadFormat_0_11[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.016"/>
+  <testcase name="testMultiStripeColumnEncryption[0]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testFutureOrcFile[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.061"/>
+  <testcase name="testDecimal64Reading[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.013"/>
+  <testcase name="testStringPadding[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.014"/>
+  <testcase name="testPredicatePushdownForComplex[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.026"/>
+  <testcase name="testFileVersion[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.006"/>
+  <testcase name="testUnionAndTimestamp[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.036"/>
+  <testcase name="testDecimal64Writing[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.012"/>
+  <testcase name="testSnappy[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.045"/>
+  <testcase name="testUnions[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.016"/>
+  <testcase name="testMergeUnderstood[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.135"/>
+  <testcase name="testStructs[0]" classname="org.apache.orc.TestVectorOrcFile" time="0.016"/>
+  <testcase name="testColumnProjection[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.135"/>
+  <testcase name="testBadPrestoVersion[1]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testZeroByteOrcFile[1]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testDate1900[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.981"/>
+  <testcase name="testDate2038[1]" classname="org.apache.orc.TestVectorOrcFile" time="1.754"/>
+  <testcase name="testColumnEncryption[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.174"/>
+  <testcase name="testLz4[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.042"/>
+  <testcase name="testLzo[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.031"/>
+  <testcase name="testMemoryManagement[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.011"/>
+  <testcase name="testLists[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.026"/>
+  <testcase name="testMerge[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.037"/>
+  <testcase name="testWriterVersion[1]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testPredicatePushdown[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.017"/>
+  <testcase name="testMaps[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.013"/>
+  <testcase name="testSeek[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.808"/>
+  <testcase name="testZstd[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.032"/>
+  <testcase name="testEncryptMerge[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.683"/>
+  <testcase name="testNonDictionaryRepeatingString[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.02"/>
+  <testcase name="testWithoutIndex[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.089"/>
+  <testcase name="testEmptyFile[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.014"/>
+  <testcase name="testStripeLevelStats[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.016"/>
+  <testcase name="testHiveDecimalStatsAllNulls[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.012"/>
+  <testcase name="testCodecPool[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.123"/>
+  <testcase name="metaData[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.014"/>
+  <testcase name="testRepeating[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.076"/>
+  <testcase name="testEmptyDoubleStream[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.011"/>
+  <testcase name="test1[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.019"/>
+  <testcase name="testStringAndBinaryStatistics[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.011"/>
+  <testcase name="testExpansion[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.027"/>
+  <testcase name="testTimestamp[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.011"/>
+  <testcase name="testReadFormat_0_11[1]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testMultiStripeColumnEncryption[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.92"/>
+  <testcase name="testFutureOrcFile[1]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testDecimal64Reading[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.012"/>
+  <testcase name="testStringPadding[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.019"/>
+  <testcase name="testPredicatePushdownForComplex[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.021"/>
+  <testcase name="testFileVersion[1]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testUnionAndTimestamp[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.026"/>
+  <testcase name="testDecimal64Writing[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.011"/>
+  <testcase name="testSnappy[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.03"/>
+  <testcase name="testUnions[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.012"/>
+  <testcase name="testMergeUnderstood[1]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testStructs[1]" classname="org.apache.orc.TestVectorOrcFile" time="0.011"/>
+  <testcase name="testColumnProjection[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.068"/>
+  <testcase name="testBadPrestoVersion[2]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testZeroByteOrcFile[2]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testDate1900[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.785"/>
+  <testcase name="testDate2038[2]" classname="org.apache.orc.TestVectorOrcFile" time="1.356"/>
+  <testcase name="testColumnEncryption[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.05"/>
+  <testcase name="testLz4[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.034"/>
+  <testcase name="testLzo[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.036"/>
+  <testcase name="testMemoryManagement[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.016"/>
+  <testcase name="testLists[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.01"/>
+  <testcase name="testMerge[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.154"/>
+  <testcase name="testWriterVersion[2]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testPredicatePushdown[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.016"/>
+  <testcase name="testMaps[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.015"/>
+  <testcase name="testSeek[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.696"/>
+  <testcase name="testZstd[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.03"/>
+  <testcase name="testEncryptMerge[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.519"/>
+  <testcase name="testNonDictionaryRepeatingString[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.02"/>
+  <testcase name="testWithoutIndex[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.084"/>
+  <testcase name="testEmptyFile[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.018"/>
+  <testcase name="testStripeLevelStats[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.022"/>
+  <testcase name="testHiveDecimalStatsAllNulls[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.016"/>
+  <testcase name="testCodecPool[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.152"/>
+  <testcase name="metaData[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.019"/>
+  <testcase name="testRepeating[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.102"/>
+  <testcase name="testEmptyDoubleStream[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.019"/>
+  <testcase name="test1[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.021"/>
+  <testcase name="testStringAndBinaryStatistics[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.01"/>
+  <testcase name="testExpansion[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.021"/>
+  <testcase name="testTimestamp[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.016"/>
+  <testcase name="testReadFormat_0_11[2]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testMultiStripeColumnEncryption[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.676"/>
+  <testcase name="testFutureOrcFile[2]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testDecimal64Reading[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.018"/>
+  <testcase name="testStringPadding[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.011"/>
+  <testcase name="testPredicatePushdownForComplex[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.016"/>
+  <testcase name="testFileVersion[2]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testUnionAndTimestamp[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.045"/>
+  <testcase name="testDecimal64Writing[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.021"/>
+  <testcase name="testSnappy[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.048"/>
+  <testcase name="testUnions[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.029"/>
+  <testcase name="testMergeUnderstood[2]" classname="org.apache.orc.TestVectorOrcFile" time="0">
+    <skipped message="got: &lt;false&gt;, expected: is &lt;true&gt;"/>
+  </testcase>
+  <testcase name="testStructs[2]" classname="org.apache.orc.TestVectorOrcFile" time="0.011"/>
+</testsuite>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.orc.TestOrcTimezone1" time="1.417" tests="24" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-booter/2.21.0/surefire-booter-2.21.0.jar:/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-api/2.21.0/surefire-api-2.21.0.jar:/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.21.0/surefire-logger-api-2.21.0.jar:/home/ubuntu/Downloads/orc-master/java/core/target/test-classes:/home/ubuntu/Downloads/orc-master/java/core/target/classes:/home/ubuntu/Downloads/orc-master/java/shims/target/orc-shims-1.7.0-SNAPSHOT.jar:/home/ubuntu/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/home/ubuntu/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/ubuntu/.m2/repository/io/airlift/aircompressor/0.15/aircompressor-0.15.jar:/home/ubuntu/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-annotations/2.2.0/hadoop-annotations-2.2.0.jar:/home/ubuntu/.m2/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar:/home/ubuntu/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/home/ubuntu/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/home/ubuntu/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/home/ubuntu/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1.jar:/home/ubuntu/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/home/ubuntu/.m2/repository/asm/asm/3.1/asm-3.1.jar:/home/ubuntu/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/ubuntu/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/ubuntu/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/home/ubuntu/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.8/jackson-core-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.8/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0.jar:/home/ubuntu/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/home/ubuntu/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.2.0/hadoop-hdfs-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hive/hive-storage-api/2.7.1/hive-storage-api-2.7.1.jar:/home/ubuntu/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/home/ubuntu/.m2/repository/org/threeten/threeten-extra/1.5.0/threeten-extra-1.5.0.jar:/home/ubuntu/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/home/ubuntu/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/ubuntu/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/1.0/objenesis-1.0.jar:/home/ubuntu/.m2/repository/org/apache/maven/surefire/surefire-junit4/2.21.0/surefire-junit4-2.21.0.jar"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="test.tmp.dir" value="/home/ubuntu/Downloads/orc-master/java/core/target/testing-tmp"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /home/ubuntu/Downloads/orc-master/java/core/target/surefire 2020-01-21T11-51-19_535-jvmRun1 surefire6964005073139436471tmp surefire_41803596880111103173tmp"/>
+    <property name="surefire.test.class.path" value="/home/ubuntu/Downloads/orc-master/java/core/target/test-classes:/home/ubuntu/Downloads/orc-master/java/core/target/classes:/home/ubuntu/Downloads/orc-master/java/shims/target/orc-shims-1.7.0-SNAPSHOT.jar:/home/ubuntu/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/home/ubuntu/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/home/ubuntu/.m2/repository/io/airlift/aircompressor/0.15/aircompressor-0.15.jar:/home/ubuntu/.m2/repository/javax/xml/bind/jaxb-api/2.2.11/jaxb-api-2.2.11.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-common/2.2.0/hadoop-common-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-annotations/2.2.0/hadoop-annotations-2.2.0.jar:/home/ubuntu/.m2/repository/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-math/2.1/commons-math-2.1.jar:/home/ubuntu/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/home/ubuntu/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/home/ubuntu/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4.jar:/home/ubuntu/.m2/repository/commons-io/commons-io/2.1/commons-io-2.1.jar:/home/ubuntu/.m2/repository/commons-net/commons-net/3.1/commons-net-3.1.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-core/1.9/jersey-core-1.9.jar:/home/ubuntu/.m2/repository/com/sun/jersey/jersey-server/1.9/jersey-server-1.9.jar:/home/ubuntu/.m2/repository/asm/asm/3.1/asm-3.1.jar:/home/ubuntu/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/home/ubuntu/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/home/ubuntu/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/home/ubuntu/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.8.8/jackson-core-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.8.8/jackson-mapper-asl-1.8.8.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-auth/2.2.0/hadoop-auth-2.2.0.jar:/home/ubuntu/.m2/repository/com/jcraft/jsch/0.1.42/jsch-0.1.42.jar:/home/ubuntu/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/home/ubuntu/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/home/ubuntu/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.2.0/hadoop-hdfs-2.2.0.jar:/home/ubuntu/.m2/repository/org/apache/hive/hive-storage-api/2.7.1/hive-storage-api-2.7.1.jar:/home/ubuntu/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/ubuntu/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar:/home/ubuntu/.m2/repository/org/threeten/threeten-extra/1.5.0/threeten-extra-1.5.0.jar:/home/ubuntu/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2.jar:/home/ubuntu/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/home/ubuntu/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/ubuntu/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/ubuntu/.m2/repository/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar:/home/ubuntu/.m2/repository/org/objenesis/objenesis/1.0/objenesis-1.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/ubuntu"/>
+    <property name="user.language" value="en"/>
+    <property name="example.dir" value="/home/ubuntu/Downloads/orc-master/java/core/../../examples"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="basedir" value="/home/ubuntu/Downloads/orc-master/java/core"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_232-8u232-b09-0ubuntu1~18.04.1-b09"/>
+    <property name="user.name" value="ubuntu"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.15.0-1056-aws"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/ubuntu/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_232"/>
+    <property name="user.dir" value="/home/ubuntu/Downloads/orc-master/java/core"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="java.vm.version" value="25.232-b09"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testReadTimestampFormat_0_11[0]" classname="org.apache.orc.TestOrcTimezone1" time="0.573"/>
+  <testcase name="testTimestampWriter[0]" classname="org.apache.orc.TestOrcTimezone1" time="0.105"/>
+  <testcase name="testReadTimestampFormat_0_11[1]" classname="org.apache.orc.TestOrcTimezone1" time="0.023"/>
+  <testcase name="testTimestampWriter[1]" classname="org.apache.orc.TestOrcTimezone1" time="0.04"/>
+  <testcase name="testReadTimestampFormat_0_11[2]" classname="org.apache.orc.TestOrcTimezone1" time="0.033"/>
+  <testcase name="testTimestampWriter[2]" classname="org.apache.orc.TestOrcTimezone1" time="0.031"/>
+  <testcase name="testReadTimestampFormat_0_11[3]" classname="org.apache.orc.TestOrcTimezone1" time="0.031"/>
+  <testcase name="testTimestampWriter[3]" classname="org.apache.orc.TestOrcTimezone1" time="0.033"/>
+  <testcase name="testReadTimestampFormat_0_11[4]" classname="org.apache.orc.TestOrcTimezone1" time="0.022"/>
+  <testcase name="testTimestampWriter[4]" classname="org.apache.orc.TestOrcTimezone1" time="0.024"/>
+  <testcase name="testReadTimestampFormat_0_11[5]" classname="org.apache.orc.TestOrcTimezone1" time="0.028"/>
+  <testcase name="testTimestampWriter[5]" classname="org.apache.orc.TestOrcTimezone1" time="0.033"/>
+  <testcase name="testReadTimestampFormat_0_11[6]" classname="org.apache.orc.TestOrcTimezone1" time="0.028"/>
+  <testcase name="testTimestampWriter[6]" classname="org.apache.orc.TestOrcTimezone1" time="0.023"/>
+  <testcase name="testReadTimestampFormat_0_11[7]" classname="org.apache.orc.TestOrcTimezone1" time="0.017"/>
+  <testcase name="testTimestampWriter[7]" classname="org.apache.orc.TestOrcTimezone1" time="0.016"/>
+  <testcase name="testReadTimestampFormat_0_11[8]" classname="org.apache.orc.TestOrcTimezone1" time="0.019"/>
+  <testcase name="testTimestampWriter[8]" classname="org.apache.orc.TestOrcTimezone1" time="0.021"/>
+  <testcase name="testReadTimestampFormat_0_11[9]" classname="org.apache.orc.TestOrcTimezone1" time="0.021"/>
+  <testcase name="testTimestampWriter[9]" classname="org.apache.orc.TestOrcTimezone1" time="0.027"/>
+  <testcase name="testReadTimestampFormat_0_11[10]" classname="org.apache.orc.TestOrcTimezone1" time="0.018"/>
+  <testcase name="testTimestampWriter[10]" classname="org.apache.orc.TestOrcTimezone1" time="0.018"/>
+  <testcase name="testReadTimestampFormat_0_11[11]" classname="org.apache.orc.TestOrcTimezone1" time="0.025"/>
+  <testcase name="testTimestampWriter[11]" classname="org.apache.orc.TestOrcTimezone1" time="0.019"/>
+</testsuite>

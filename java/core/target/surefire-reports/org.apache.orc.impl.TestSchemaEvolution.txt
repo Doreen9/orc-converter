@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.orc.impl.TestSchemaEvolution
+-------------------------------------------------------------------------------
+Tests run: 53, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.621 s - in org.apache.orc.impl.TestSchemaEvolution

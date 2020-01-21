@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.orc.TestVectorOrcFile
+-------------------------------------------------------------------------------
+Tests run: 129, Failures: 0, Errors: 0, Skipped: 18, Time elapsed: 20.609 s - in org.apache.orc.TestVectorOrcFile

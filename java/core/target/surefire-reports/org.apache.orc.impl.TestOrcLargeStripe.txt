@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.orc.impl.TestOrcLargeStripe
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.02 s - in org.apache.orc.impl.TestOrcLargeStripe
